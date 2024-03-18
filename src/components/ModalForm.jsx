@@ -39,6 +39,7 @@ const ModalForm = ({ createUser, editUser, updateUser, setEditUser, modal, setMo
     }
 
     const handleCloseModal = () => {
+        setEditUser()
         setModal(true)
     }
 
