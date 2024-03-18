@@ -41,6 +41,13 @@ const ModalForm = ({ createUser, editUser, updateUser, setEditUser, modal, setMo
     const handleCloseModal = () => {
         setEditUser()
         setModal(true)
+        reset({
+            first_name: "",
+            last_name: "",
+            email: "",
+            password: "",
+            birthday: "",
+        })
     }
 
     return (<div className={` ${modal && 'hidden'} fixed top-0 left-0 w-full min-h-[100vh] bg-[#0003] backdrop-blur-[2px] flex justify-center items-center transition-transform`}>
