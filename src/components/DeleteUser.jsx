@@ -18,7 +18,7 @@ const DeleteUser = ({ deleteTheUser,deleteUser,deleteModal,setDeleteModal,setDel
             <h2 className=" text-xl font-semibold">Eliminando Usuario</h2>
             <span className=" absolute top-0 right-0 text-xl font-medium text-red-600 cursor-pointer" onClick={handleClose}>X</span>
         </header>
-        <h2 className=" text-center text-lg">Eseta seguro que desea eliminar a <span className=" font-semibold">{deleteTheUser?.first_name} {deleteTheUser?.last_name}</span>?</h2>
+        <h2 className=" text-center text-lg">Esta seguro que desea eliminar a <span className=" font-semibold">{deleteTheUser?.first_name} {deleteTheUser?.last_name}</span>?</h2>
         <button className="   bg-red-600 text-white rounded-xl text-center text-lg font-semibold block py-1"  onClick={handleDelete}>Eliminar</button>
 
         </div>
